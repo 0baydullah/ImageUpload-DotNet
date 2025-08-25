@@ -1,5 +1,6 @@
 ﻿using ImageUpload.User;
 using Microsoft.EntityFrameworkCore;
+using v2.Entities;
 
 namespace ImageUpload.Data
 {
@@ -12,5 +13,7 @@ namespace ImageUpload.Data
 
         public DbSet<UserBase64> UserBase64 { get; set; }
         public DbSet<UserImageFile> UserImageFile { get; set; }
+
+        public DbSet<v2.Entities.User> users { get; set; }
     }
 }
