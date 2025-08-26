@@ -1,0 +1,47 @@
+﻿@page "/"
+@model ImageUploadWeb.Pages.UsersModel
+
+<h2>Upload / Update User</h2>
+<form method="post" enctype="multipart/form-data" class="form-group form form-control">
+    <input type="hidden" asp-for="User.id" />
+    <div>
+        <label>Emp ID:</label>
+        <input asp-for="User.empId" />
+    </div>
+    <div>
+        <label>Name:</label>
+        <input asp-for="User.name" />
+    </div>
+    <div>
+        <label>Image:</label>
+        <input type="file" asp-for="User.image" />
+    </div>
+    <button type="submit">Save</button>
+</form>
+
+@if (Model.Users.Any())
+{
+    <h2>Users</h2>
+        <table class="table table-striped table-bordered">
+            <tr>
+                <th>EmpId</th>
+                <th>Name</th>
+                <th>Image</th>
+            </tr>
+            @foreach (var user in Model.Users)
+            {
+                <tr>
+                    <td>@user.empId</td>
+                    <td>@user.name</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(user.image))
+                        {
+                            var imageSrc = "https://localhost:5001" + user.image;
+                            <img src="@imageSrc" width="100" class="img-thumbnail" />
+                        }
+                    </td>
+                </tr>
+            }
+        </table>
+        
+}

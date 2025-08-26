@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageUpload", "ImageUpload\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v2", "v2\v2.csproj", "{53CA8CDA-B4B2-459C-93D1-FE510E3D5B0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageUploadWeb", "ImageUploadWeb\ImageUploadWeb.csproj", "{FFE24453-DB78-4238-B3DF-E726FEAD35BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{53CA8CDA-B4B2-459C-93D1-FE510E3D5B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53CA8CDA-B4B2-459C-93D1-FE510E3D5B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53CA8CDA-B4B2-459C-93D1-FE510E3D5B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE24453-DB78-4238-B3DF-E726FEAD35BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE24453-DB78-4238-B3DF-E726FEAD35BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE24453-DB78-4238-B3DF-E726FEAD35BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE24453-DB78-4238-B3DF-E726FEAD35BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
